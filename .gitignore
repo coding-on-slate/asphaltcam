@@ -1,0 +1,17 @@
+CMakeCache.txt
+CMakeFiles/
+CMakeTmp/
+Makefile
+cmake_install.cmake
+asphaltcam_autogen/
+harbour-asphaltcam_autogen/
+*_autogen/
+QtCreatorDeployment.txt
+asphaltcam
+harbour-asphaltcam
+*.rpm
+RPMS/
+install_manifest.txt
+documentation.list
+.sfdk/
+.vscode/

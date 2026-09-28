@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="86" height="86" viewBox="0 0 86 86"
+     version="1.1">
+  <!--
+    Launcher silhouette is the official Sailfish single/leaf shape
+    (circle with one squared corner), from the Jolla icon templates
+    (CC BY 3.0). Artwork is original to AsphaltCam.
+  -->
+  <defs>
+    <path id="leaf"
+          d="m 0.301,84.277
+             c 0,0.786 0.637,1.423 1.423,1.423
+             0,0 40.641,0 41.276,0
+             C 66.583,85.7 85.7,66.583 85.7,43
+             85.7,19.418 66.583,0.3 43,0.3
+             19.417,0.3 0.3,19.418 0.3,43
+             c 0,0.636 0.001,41.277 0.001,41.277 z"/>
+    <clipPath id="leafClip">
+      <use xlink:href="#leaf"/>
+    </clipPath>
+    <linearGradient id="sky" x1="43" y1="0" x2="43" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5aaee8"/>
+      <stop offset="1" stop-color="#d2eefe"/>
+    </linearGradient>
+    <radialGradient id="lensGlass" cx="0.35" cy="0.32" r="0.7">
+      <stop offset="0" stop-color="#d8f2ff"/>
+      <stop offset="1" stop-color="#3d7eb8"/>
+    </radialGradient>
+  </defs>
+
+  <g clip-path="url(#leafClip)">
+    <rect width="86" height="86" fill="url(#sky)"/>
+
+    <polygon points="52,36  -10,92  92,88" fill="#1a1d24"/>
+    <path d="M 52 36 L 4 86" fill="none" stroke="#e8eef4"
+          stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 52 36 L 90 80" fill="none" stroke="#e8eef4"
+          stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 52 40 L 44 86" fill="none" stroke="#e8eef4"
+          stroke-width="1.8" stroke-linecap="round"
+          stroke-dasharray="16 14"/>
+
+    <g transform="translate(22.5,60) scale(1.65)">
+      <circle r="10.9" fill="#c5cad3"/>
+      <circle r="7.4" fill="url(#lensGlass)"/>
+      <circle r="2.8" fill="#1e2a3a"/>
+      <circle cx="-3.4" cy="-3.8" r="2.2" fill="#ffffff" opacity="0.7"/>
+    </g>
+  </g>
+</svg>
