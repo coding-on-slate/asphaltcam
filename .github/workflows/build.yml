@@ -1,0 +1,19 @@
+name: Build RPM
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: coderus/github-sfos-build@sfos5
+        with:
+          release: "5.1.0.11"
+          arch: aarch64
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rpm-aarch64
+          path: RPMS/*.rpm
