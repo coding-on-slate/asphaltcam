@@ -262,6 +262,10 @@ Page {
             visible: !recorder.recording
             enabled: !recorder.recording
             MenuItem {
+                text: qsTr("Gallery")
+                onClicked: pageStack.navigateForward()
+            }
+            MenuItem {
                 text: qsTr("Settings")
                 onClicked: pageStack.animatorPush(Qt.resolvedUrl("SettingsPage.qml"))
             }

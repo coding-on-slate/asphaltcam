@@ -1,5 +1,8 @@
 Name:       harbour-asphaltcam
 
+# Do not record the builder machine hostname in the RPM header.
+%global _buildhost sfdk-builder
+
 Summary:    Looping dash cam with crash lock
 Version:    1.0
 Release:    1
